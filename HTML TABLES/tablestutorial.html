@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="tablestutorial.css" />
+  </head>
+  <body>
+    <table class="table-practice">
+      <thead>
+        <tr>
+          <th>one</th>
+          <th>two</th>
+          <th>three</th>
+        </tr>
+      </thead>
+      <tr class="table-practice__row__one">
+        <td colspan="2" align="middle">1</td>
+        <td>2</td>
+        <td rowspan="3"><button>click me</button></td>
+      </tr>
+      <tr class="table-practice__row__two">
+        <td>4</td>
+        <td class="five">5</td>
+        <td>6</td>
+      </tr>
+      <tr class="table-practice__row__three">
+        <td>7</td>
+        <td align="middle"><button>8</button></td>
+        <td>9</td>
+      </tr>
+      <tfoot>
+        <tr>
+          <td>footer 1</td>
+          <td>footer 2</td>
+          <td>footer 3</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br /><br /><br />
+
+    <table class="price-tag">
+      <thead>
+        <tr>
+          <td>PRODUCT</td>
+          <td>QTY</td>
+          <td>PRICE</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Drink <span>(large)</span></td>
+          <td>1</td>
+          <td>2.90</td>
+        </tr>
+        <tr>
+          <td>Fries <span>(small)</span></td>
+          <td>2</td>
+          <td>5.00</td>
+        </tr>
+        <tr>
+          <td>Burger <span>(no pickle)</span></td>
+          <td>2.00</td>
+          <td>7.00</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td class="thirt" colspan="2">Total</td>
+
+          <td>14.9</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  background-size: cover !important;
+  background-position: center;
+  background: url(raoul-droog-yMSecCHsIBc-unsplash.jpg);
+  border-radius: 50%;
+  position: relative;
+}
+.avatar::after,
+.avatar::before {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-110%) scale(0);
+  transition: 150ms all;
+  transform-origin: bottom center;
+}
+
+.avatar::before {
+  color: wheat;
+  background-color: black;
+  content: attr(data-tooltip);
+  font-size: 22px;
+  padding: 0.5rem;
+}
+
+.avatar:hover::before,
+.avatar:hover::after {
+  transform: translateX(-50%) translateY(-110%) scale(1);
+}
+
+.avatar::after {
+  content: "";
+
+  border: 10px solid transparent;
+  border-top-color: black;
+}

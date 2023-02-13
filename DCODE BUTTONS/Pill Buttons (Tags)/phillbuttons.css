@@ -1,0 +1,19 @@
+.phill {
+  font-size: 16px;
+  padding: 0.5em 1em;
+  margin: 0.25em;
+  border-radius: 1em;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #b2bec3;
+  transition: 300ms;
+}
+.phill:not(.button--selected):hover {
+  background-color: #2d3436;
+  color: white;
+}
+
+.button--selected {
+  background-color: #00b894;
+}

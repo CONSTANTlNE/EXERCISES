@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 2rem;
+}
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox__input {
+  display: none;
+}
+.checkbox__box {
+  width: 1.25em;
+  height: 1.25em;
+  border: 2px solid #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5em;
+  flex-shrink: 0;
+  transition: background 0.15s, border-color 0.15s;
+  border-radius: 5px;
+}
+
+.checkbox__box::after {
+  content: "\2714";
+  color: white;
+  transform: scale(0);
+  transition: transform 0.15s;
+}
+
+.checkbox__input:checked + .checkbox__box {
+  background-color: blue;
+  border-color: blue;
+}
+.checkbox__input:checked + .checkbox__box::after {
+  transform: scale(1);
+}
+
+/*=========================*/
+
+.mylabel {
+  margin-top: 2rem;
+  display: flex;
+  cursor: pointer;
+}
+
+.myinput {
+  display: none;
+}
+
+.custom {
+  height: 1.25rem;
+  width: 1.25rem;
+  border: 2px solid gray;
+  margin-right: 0.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  transition: background-color 0.15s;
+}
+
+.custom::after {
+  content: "\2714";
+  transform: scale(0);
+  color: white;
+  transition: transform 0.15s;
+}
+
+.myinput:checked + .custom::after {
+  transform: scale(1);
+}
+.myinput:checked + .custom {
+  background-color: blue;
+}
+
+/*=========================*/

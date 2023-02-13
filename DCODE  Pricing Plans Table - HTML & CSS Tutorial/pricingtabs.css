@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 30px;
+}
+.pricing-plan {
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  line-height: 1.5;
+  color: #636e72;
+  margin: 15px;
+}
+
+.pricing-plan--highlited {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+.pricing-plan__special-text {
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background: #134a4a;
+  font-size: 1.1em;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) insed;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.pricing-plan:hover {
+  scale: 1.1;
+  z-index: 2;
+}
+
+.pricing-plan__header {
+  padding: 25px;
+  background-color: #00cec9;
+  color: white;
+}
+.pricing-plan__title,
+.pricing-plan__summary {
+  text-align: center;
+}
+
+.pricing-plan__title {
+  font-size: 400;
+  font-size: 1.5em;
+}
+
+.pricing-plan__summary {
+  font-size: 300;
+  font-size: 1em;
+}
+
+.pricing-plan__description {
+  padding: 25px;
+}
+
+.pricing-plan__list {
+}
+
+.pricing-plan__feature {
+  list-style: none;
+  padding-left: 25px;
+  position: relative;
+  font-size: 0.9em;
+}
+
+.pricing-plan__feature:not(:last-child) {
+  margin-bottom: 0.5em;
+}
+
+.pricing-plan__feature::before {
+  content: "\2714";
+  color: #00cec9;
+  left: 0;
+  position: absolute;
+}
+
+/* ==========pricing-plan__actions========== */
+
+.pricing-plan__actions {
+  padding: 25px;
+  border-top: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.pricing-plan__cost {
+  font-size: 2em;
+  color: black;
+}
+
+.pricing-plan__text {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+.pricing-plan__button {
+  margin: 15px 0;
+  padding: 8px 20px;
+  text-decoration: none;
+  color: #00cec9;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #00cec9;
+  letter-spacing: 0.02em;
+  font-weight: bold;
+}
+
+.pricing-plan__button:hover {
+  background-color: #00cec9;
+
+  color: white;
+}
